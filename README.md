@@ -41,4 +41,4 @@ Remember to show success/error message on form submit.
 - **Chrome:** Native built.
 - **Firefox:** Dialog from MDL is not supported. Had to get 3rd party plugin.
 - **Safari:** Could not test for lack of devices.
-- **Edge:** Under testing.
+- **Edge:** Grid needed CSS fix. Horizontal bar also appear, fixed.

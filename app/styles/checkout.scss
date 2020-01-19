@@ -167,6 +167,22 @@
   }
 }
 
+@supports (-ms-ime-align: auto) {
+  .mdl-cell {
+    &--6-col {
+      padding: 8px 8px;
+      margin: 0px;
+      width: 50%;
+      @media (max-width: 839px) {
+        width: 100% !important;
+      }
+    }
+  }
+  .mdl-demo .mdl-layout__tab-bar {
+    overflow-x: hidden;
+  }
+}
+
 ::placeholder,
 :-ms-input-placeholder {
   color: #9b9ba7;
