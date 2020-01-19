@@ -168,7 +168,18 @@
     document.querySelector(".mdl-button.btn-close").innerHTML =
       "Continue Shopping";
     dialog.showModal();
-    return true;
+
+    // Method for new page after checkout
+    // remove all is-active classes from tabs
+    // $("a.mdl-layout__tab").removeClass("is-active");
+    // // remove all is-active classes from panels
+    // $(".mdl-layout__tab-panel").removeClass("is-active");
+    // // activate desired tab panel
+    // $("#thank-you").addClass("is-active");
+
+    // Set true to go though form process
+    // return true;
+    return false;
   }
 
   $("[name='checkout_form']").on("submit", validateForm);
