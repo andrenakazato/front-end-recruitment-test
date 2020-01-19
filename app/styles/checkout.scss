@@ -1,14 +1,35 @@
+.mdl-textfield__input {
+  font-family: "Roboto", "Helvetica", sans-serif;
+}
+
 #checkout {
   background: #f2f2f2 !important;
 
   .mdl-chip {
+    padding-top: 1rem;
     background: transparent;
     font-weight: bold;
     text-transform: uppercase;
-    :first-child {
-      margin-left: -5px;
+    &.title {
+      &-out-container {
+        margin-left: 18px;
+        @media (min-width: 839px) {
+          margin-left: -12px;
+        }
+      }
+      &-in-container {
+        @media (min-width: 839px) {
+          margin-left: -22px;
+        }
+      }
     }
-    margin-left: -15px;
+    // margin-left: -30px;
+    // :first-child {
+    //   margin-left: 20px;
+    //   @media (max-width: 839px) {
+    //     margin-left: 20px;
+    //   }
+    // }
 
     &__contact {
       height: 22px;
@@ -17,7 +38,8 @@
       line-height: 22px;
     }
     &__text {
-      font-size: 14px;
+      font-size: 13px;
+      font-weight: 900;
     }
     .material-icons {
       font-size: 15px;
@@ -58,12 +80,36 @@
       transform: translateY(-50%);
       opacity: 0.25;
     }
+
+    &__error {
+      background: white;
+      width: calc(100% - 7px);
+      border-radius: 5px;
+      margin-left: -7px;
+      padding-left: 7px;
+      box-shadow: 0 2px #dcdcdc;
+      z-index: 1;
+    }
+
+    .flag-credit-card {
+      opacity: 1;
+      width: 55px;
+      height: 55px;
+      background-repeat: no-repeat;
+      background-position: center;
+      &.visa {
+        background-image: url(/images/card-visa.svg);
+      }
+      &.master {
+        background-image: url(/images/card-master.svg);
+      }
+    }
   }
 
   .complete-purchase {
+    margin-top: 1rem;
     width: 100%;
     font-weight: bold;
-    // background: #6bd400;
     padding: 5px 0;
     height: auto;
     .material-icons {
@@ -72,6 +118,9 @@
   }
 
   .order {
+    @media (max-width: 839px) {
+      padding: 1rem;
+    }
     &-title {
       font-weight: bold;
     }
@@ -112,18 +161,13 @@
   }
 }
 
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #9b9ba7;
-  opacity: 1; /* Firefox */
+.mdl-dialog {
+  @media (min-width: 839px) {
+    width: 500px;
+  }
 }
 
+::placeholder,
 :-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #9b9ba7;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
   color: #9b9ba7;
 }
