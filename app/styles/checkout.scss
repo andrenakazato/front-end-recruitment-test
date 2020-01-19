@@ -1,0 +1,129 @@
+#checkout {
+  background: #f2f2f2 !important;
+
+  .mdl-chip {
+    background: transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    :first-child {
+      margin-left: -5px;
+    }
+    margin-left: -15px;
+
+    &__contact {
+      height: 22px;
+      width: 22px;
+      font-size: 14px;
+      line-height: 22px;
+    }
+    &__text {
+      font-size: 14px;
+    }
+    .material-icons {
+      font-size: 15px;
+      color: #484848;
+      padding: 0 10px;
+    }
+  }
+
+  .mdl-textfield {
+    background: white;
+    border-radius: 2.5px;
+    padding: 1.5rem 0.5rem 0.5rem;
+    box-shadow: 0px 2px #dcdcdc;
+    width: 100%;
+
+    &__input {
+      border-bottom: none;
+    }
+
+    &--floating-label .mdl-textfield__label {
+      font-weight: bold;
+      left: 7px;
+    }
+
+    &__label:after {
+      bottom: 7px;
+    }
+
+    &.mdl-textfield.is-focused .mdl-textfield__label:after {
+      width: 95%;
+    }
+
+    .icon-right {
+      right: 12px;
+      left: auto;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0.25;
+    }
+  }
+
+  .complete-purchase {
+    width: 100%;
+    font-weight: bold;
+    // background: #6bd400;
+    padding: 5px 0;
+    height: auto;
+    .material-icons {
+      font-size: 17px;
+    }
+  }
+
+  .order {
+    &-title {
+      font-weight: bold;
+    }
+    .wrapper {
+      margin-top: 20px;
+      padding: 13px;
+      background: white;
+      border: 1px dashed #efefef;
+      border-radius: 2px;
+      box-shadow: 0 0 0 4px #ffffff, 0px 2px 0px 4px #dcdcdc;
+    }
+
+    ul {
+      padding: 0px 0 10px;
+      border-bottom: 1px dashed #efefef;
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .order-list-item {
+        list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-content: start;
+        span:last-child {
+          text-align: right;
+        }
+      }
+    }
+
+    &-total {
+      font-weight: bold;
+      &-sum {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #9b9ba7;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #9b9ba7;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #9b9ba7;
+}
