@@ -1,11 +1,13 @@
 # Snowdog Front-end Recruitment test
 
 ## Rules
-* Please do not use fake Github accounts, we want to check your contributions history since we do a lot in open source.
-* Remember to commit changes after every task.
-* We are not answering any questions about this test. Everyone work with the same set of information, to let us fairly judge your work.
+
+- Please do not use fake Github accounts, we want to check your contributions history since we do a lot in open source.
+- Remember to commit changes after every task.
+- We are not answering any questions about this test. Everyone work with the same set of information, to let us fairly judge your work.
 
 ## Before you start
+
 Fork this repository, it needs to stay on Github, available for everyone.
 
 The test is based on [Google Web Starter Kit](https://github.com/google/web-starter-kit) v0.6.5
@@ -15,6 +17,7 @@ Follow [installation instructions](https://github.com/google/web-starter-kit/blo
 ---
 
 ### Task 1
+
 Add [this repo](https://github.com/SnowdogApps/front-end-recruitment-test-submodule) as submodule at `/submodule` folder, then run gulp task `submodule` to add symlink.
 
 [Here](http://localhost:3000/submodule.html) you should see a beautiful page with slices of fried bacon.
@@ -22,11 +25,20 @@ Add [this repo](https://github.com/SnowdogApps/front-end-recruitment-test-submod
 Add JS to clone bacon image and attach this action to **Yeah, I want more bacon!** button.
 
 ### Task 2
+
 Add tab **Checkout** that reflects design from `/projects/checkout.png`.
 
 Use SCSS to write your styles.
 
 ### Task 3
+
 Add simple JS validation to checkout form created earlier.
 
 Remember to show success/error message on form submit.
+
+### Testing
+
+- **Chrome:** Native built.
+- **Firefox:** Dialog from MDL is not supported. Had to get 3rd party plugin.
+- **Safari:** Could not test for lack of devices.
+- **Edge:** Under testing.
